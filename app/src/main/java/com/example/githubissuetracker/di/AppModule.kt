@@ -23,7 +23,7 @@ object AppModule {
     fun provideApolloClient(): ApolloClient {
         return ApolloClient.Builder()
             .serverUrl("https://api.github.com/graphql")
-            .addHttpInterceptor(AuthorizationInterceptor("token here"))
+            .addHttpInterceptor(AuthorizationInterceptor(""))
             .build()
     }
 

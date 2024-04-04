@@ -73,7 +73,9 @@ fun IssuesScreen(
                     //IssuesTrackerAppBar(date = Date())
                 }
             ) {
-                FilterSection(viewModel = viewModel)
+                Column (modifier = Modifier.fillMaxSize()) {
+                    FilterSection(viewModel = viewModel)
+                }
             }
         }
     }
@@ -88,7 +90,8 @@ fun IssueItem(
         mutableStateOf(false)
     }
     Column(
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier
+            .fillMaxWidth()
             .padding(8.dp)
     ) {
         Row(
