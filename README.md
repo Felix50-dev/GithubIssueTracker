@@ -78,10 +78,10 @@ MVVM (Model-View-ViewModel) is a software architectural pattern that facilitates
 
 ###filterByDate
 
-img src="app/src/main/java/com/example/githubissuetracker/screenshots/Filter By Date.jpg" width="300" height="600"/>
+<img src="app/src/main/java/com/example/githubissuetracker/screenshots/Filter By Date.jpg" width="300" height="600"/>
 
 FilterByState
 
-img src="app/src/main/java/com/example/githubissuetracker/screenshots/FilterByState.jpg" width="300" height="600"/>
+<img src="app/src/main/java/com/example/githubissuetracker/screenshots/FilterByState.jpg" width="300" height="600"/>
 
 
