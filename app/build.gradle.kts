@@ -1,15 +1,14 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.apollographql.apollo3").version("3.7.3")
+    id("com.apollographql.apollo3")
+    id ("kotlin-kapt")
+    id ("dagger.hilt.android.plugin")
 }
 
 apollo {
     service("service") {
         packageName.set("com.example.githubissuetracker")
-        outputDirConnection {
-            connectToKotlinSourceSet("main") // main is by default but setting this explicitly fixed the warning.
-        }
     }
 }
 
@@ -69,7 +68,9 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
-    implementation("com.apollographql.apollo3:apollo-runtime:3.7.3")
+
+    implementation("com.apollographql.apollo3:apollo-runtime")
+
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -77,4 +78,14 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    //hilt
+    implementation("com.google.dagger:hilt-android:2.48")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
+    kapt("androidx.hilt:hilt-compiler:1.2.0")
+    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
+    androidTestImplementation("com.google.dagger:hilt-android-testing:2.48")
+    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.48")
+
+    androidTestImplementation("io.mockk:mockk-android:1.10.5")
 }
