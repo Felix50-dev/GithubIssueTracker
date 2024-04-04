@@ -66,22 +66,26 @@ MVVM (Model-View-ViewModel) is a software architectural pattern that facilitates
 4. Bind UI components to ViewModel data using data binding or other techniques.
 5. Write unit tests for your ViewModels to verify their behavior.
 
-##Screenshots
+## Screenshots
 
-###DarkTheme
+### DarkTheme
 
 <img src="app/src/main/java/com/example/githubissuetracker/screenshots/DarkTheme.jpg" width="300" height="600"/>
 
-###LightTheme
+### LightTheme
 
 <img src="app/src/main/java/com/example/githubissuetracker/screenshots/LightTheme.jpg" width="300" height="600"/>
 
-###filterByDate
+### FilterByDate
 
 <img src="app/src/main/java/com/example/githubissuetracker/screenshots/Filter By Date.jpg" width="300" height="600"/>
 
-FilterByState
+### FilterByState
 
 <img src="app/src/main/java/com/example/githubissuetracker/screenshots/FilterByState.jpg" width="300" height="600"/>
+
+### Search
+
+<img src="app/src/main/java/com/example/githubissuetracker/screenshots/Search.jpg" width="300" height="600"/>
 
 
